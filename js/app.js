@@ -4,15 +4,26 @@
    MOBILE MENU
 =================================================== */
 
-const menuButton = document.querySelector(".mobile-toggle");
+const menuButton =
+    document.querySelector(".mobile-toggle");
 
-const mobileMenu = document.querySelector(".mobile-menu");
+const mobileMenu =
+    document.querySelector(".mobile-menu");
 
-menuButton.addEventListener("click", () => {
+if (menuButton && mobileMenu) {
 
-    mobileMenu.classList.toggle("active");
+    menuButton.addEventListener(
+        "click",
+        () => {
 
-});
+            mobileMenu.classList.toggle(
+                "active"
+            );
+
+        }
+    );
+
+}
 
 
 /* ===================================================
@@ -787,3 +798,11 @@ if (contactForm) {
     );
 
 }
+
+
+
+
+
+
+
+
