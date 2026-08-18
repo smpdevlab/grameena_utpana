@@ -13,17 +13,50 @@ const mobileMenu =
 if (menuButton && mobileMenu) {
 
     menuButton.addEventListener(
-        "click",
-        () => {
+    "click",
+    () => {
 
-            mobileMenu.classList.toggle(
+        mobileMenu.classList.toggle(
+            "active"
+        );
+
+        const icon =
+            menuButton.querySelector("i");
+
+        if (
+            mobileMenu.classList.contains(
                 "active"
+            )
+        ) {
+
+            icon.classList.remove(
+                "fa-bars"
             );
 
-        }
-    );
+            icon.classList.add(
+                "fa-xmark"
+            );
 
-}
+             icon.style.transform = "rotate(90deg)";
+
+        } else {
+
+            icon.classList.remove(
+                "fa-xmark"
+            );
+
+            icon.classList.add(
+                "fa-bars"
+            );
+
+            icon.style.transform = "rotate(0deg)";
+
+        }
+
+    }
+);
+
+}/* end of if */
 
 
 /* ===================================================

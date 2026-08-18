@@ -3224,6 +3224,10 @@ SUBSCRIPTIONS PAGE
     
 }
 
+img.subscription-hero-image{
+    margin-top: 2.2em;
+}
+
 .subscription-plans{
     padding: 2rem 0;
 }
@@ -3664,7 +3668,10 @@ GOOGLE MAP
 
 .contact-map {
 
-    margin-top: 5rem;
+    margin-top: -2.8em;
+    margin-bottom: 0em;
+    padding-top:0px;
+    padding-bottom: 0px;
 
 }
 
@@ -3726,6 +3733,13 @@ MOBILE MENU
 
 }
 
+.mobile-toggle i {
+
+    transition: transform 0.4s ease;
+    
+
+}
+
 
 /* Mobile */
 
@@ -3743,6 +3757,7 @@ MOBILE MENU
 
     }
 
+  /*********
     .mobile-menu {
 
         display: none;
@@ -3759,11 +3774,41 @@ MOBILE MENU
 
     }
 
+    
+
     .mobile-menu.active {
 
         display: flex;
 
     }
+
+    *************/
+
+    .mobile-menu {
+
+    display: flex;
+
+    flex-direction: column;
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    opacity: 0;
+
+    transition:
+        max-height 0.6s ease,
+        opacity 0.4s ease;
+
+}
+
+.mobile-menu.active {
+
+    max-height: 450px;
+
+    opacity: 1;
+
+}
 
     .mobile-menu a {
 
