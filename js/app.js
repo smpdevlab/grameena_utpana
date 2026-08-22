@@ -839,3 +839,39 @@ if (contactForm) {
 
 
 
+/************************************************************************
+   
+Enquirey form and the interset-panel tieup
+ * ********************************************************************* */
+
+const enquiryForm1 =
+    document.getElementById("homepage-enquiry-form");
+
+const interestSelect =
+    document.getElementById("newHero-interest");
+
+if (enquiryForm1 && interestSelect) {
+
+    document.querySelectorAll("[data-interest]")
+        .forEach((button) => {
+
+            button.addEventListener(
+                "click",
+                () => {
+
+                    const interest =
+                        button.dataset.interest;
+
+                    interestSelect.value =
+                        interest;
+
+                    enquiryForm1.scrollIntoView({
+                        behavior: "smooth"
+                    });
+
+                }
+            );
+
+        });
+
+}
