@@ -2039,6 +2039,21 @@ end of SELECTED PRODUCTS
 
 
 
+div.footer-brand h3 a.logo img{
+    height:60px;
+
+    filter: grayscale(100%);
+  opacity: 0.7;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+
+div.footer-brand h3 a.logo img:hover{
+    height:60px;
+
+    filter: grayscale(0%);
+  opacity: 1;
+}
 
 /*==============================
     Responsive
