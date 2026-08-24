@@ -63,11 +63,15 @@
 
                 <li><a href="products.html">Products & Services</a></li>
 
-                <li><a href="outlets.html">Our Outlets</a></li>
+                <li><a href="opportunities.html">Opportunities</a></li>
 
-                <li><a href="subscriptions.html">Subscriptions</a></li>
+                <li><a href="earning_platforms.html">Earning Platforms</a></li>
 
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="get_involved.html">Get involved</a></li>
+
+                <li><a href="join.html">Join us</a></li>
+
+                
 
             </ul>
 
@@ -90,7 +94,7 @@
 
 <div class="mobile-menu">
 
-    <a href="index.html">Home</a>
+    <!--<a href="index.html">Home</a>
 
     <a href="about.html">About</a>
 
@@ -100,7 +104,24 @@
 
     <a href="subscriptions.html">Subscriptions</a>
 
-    <a href="contact.html">Contact</a>
+    <a href="contact.html">Contact</a>-->
+
+
+
+
+    <a href="index.html">Home</a>
+
+    <a href="about.html">About</a>
+
+    <a href="products.html">Products & Services</a>
+
+    <a href="opportunities.html">Opportunities</a>
+
+    <a href="earning_platforms.html">Earning Platforms</a>
+
+    <a href="get_involved.html">Get involved</a>
+
+    <a href="join.html">Join us</a>
 
 </div>
 <main>
@@ -189,14 +210,16 @@
                 Through Local Employment &
                 Enterprise -->
 
-                Creating livelihoods, promoting local products and connecting people,
-                 skills, services and markets across villages and cities.
+                <!--Creating livelihoods, promoting local products and connecting people,
+                 skills, services and markets across villages and cities.-->
+
+                 Connecting People • Skills • Services • Products • Markets Across Villages & Cities
                 
             </h2>
 
             <p>
 
-                Grameena Utpanna Kendra is an
+                <b>Grameena Utpanna Kendra</b> is an
                 organisation formed by
                 like-minded people to build
                 strong grassroots institutions
@@ -252,54 +275,70 @@
         <!-- RIGHT FORM -->
 
         <div class="newHero-formCard">
+           <h4 style="text-align: center;color:#5b7f32;font-size: 0.8em;font-weight: 250;line-height:1.8em;"> Creating opportunities.
+                Strengthening communities.</h4>
 
             <h2>
-                Together We Grow.<br>
-                Together We Prosper.
+               <!-- Together We Grow.<br>
+                Together We Prosper. -->
+                Join now!
             </h2>
 
-            <p>
+            <!--<p style="color:gray;font-weight: 100;font-size: 0.88em;;">
                 Creating opportunities.
                 Strengthening communities.
-            </p>
+            </p> -->
 
             <!-- KEEP YOUR EXISTING FORM -->
 
-            <form id="homepage-enquiry-form">
+            <form id="idHomepageEnquiryForm" 
+                    action="forms/save-enquiry.php"
+                    method="POST">
 
                 <input
                     type="text"
+                    name="full_name"
                     placeholder="Your Name"
-                >
+                    id="idFullName"
+                required>
 
                 <input
                     type="tel"
+                    name="phone"
                     placeholder="Mobile Number"
-                >
+                    id="idMobileNumber"
+                    
+                    inputmode="numeric"
+                    maxlength="10"
+                    required>
 
-    <select id="newHero-interest" name="interest">
+                    <div id="mobileError" class="form-error"></div>
 
-        <option value="">
-            How would you like to participate?
-        </option>
+                <select name="interest"
+                        id="idNewHeroInterest" 
+                    >
 
-        <option value="member">
-            Become a Member
-        </option>
+                    <option value="">
+                        Select your Interest
+                    </option>
 
-        <option value="seller">
-            Sell Your Products
-        </option>
+                    <option value="member">
+                        Become a Member
+                    </option>
 
-        <option value="opportunities">
-            Find Opportunities
-        </option>
+                    <option value="seller">
+                        Sell Your Products
+                    </option>
 
-        <option value="support">
-            Support Local
-        </option>
+                    <option value="opportunities">
+                        Find Opportunities
+                    </option>
 
-</select>
+                    <option value="support">
+                        Support Local
+                    </option>
+
+                </select>
 
                 <button type="submit">
 
@@ -318,6 +357,125 @@
      WHY CHOOSE US
 =========================== -->
 
+
+<section class="what-we-do">
+    <span style="display: block; text-align: center;margin-bottom: 1em;letter-spacing: 4px;
+  color: var(--green);
+  font-weight: 600;
+  margin-bottom: 2em; font-size:0.9em;">WHAT WE DO</span>
+    <div class="container">
+      
+        <div class="what-we-do-grid">
+            
+
+            <!-- LEFT VISUAL -->
+
+            <div class="what-we-do-visual">
+
+                <img
+                    src="images/hero/GUK_ecosystem.png"
+                    alt="GUK Ecosystem"
+                >
+
+            </div>
+
+            <!-- RIGHT CONTENT -->
+
+            <div class="what-we-do-content">
+
+               <!-- <span class="section-label">
+                    WHAT WE DO
+                </span> -->
+
+                <div class="activity">
+
+                    <h3>
+                        <i class="fa-solid fa-briefcase"></i>
+                        Create Livelihoods
+                    </h3>
+
+                    <p>
+                        Develop practical employment and
+                        self-employment opportunities for
+                        rural households, women, youth,
+                        farmers and local workers.
+                    </p>
+
+                </div>
+
+                <div class="activity">
+
+                    <h3>
+                        <i class="fa-solid fa-tags"></i>
+                        Promote Local Products
+                    </h3>
+
+                    <p>
+                        Support the promotion and sale
+                        of home-made, agricultural and
+                        locally produced products.
+                    </p>
+
+                </div>
+
+                <div class="activity">
+
+                    <h3>
+                        <i class="fa-solid fa-globe"></i>
+                        Connect to Markets
+                    </h3>
+
+                    <p>
+                        Create opportunities for local
+                        producers and service providers
+                        to reach customers, institutions
+                        and wider markets.
+                    </p>
+
+                </div>
+
+                <div class="activity">
+
+                    <h3>
+                        <i class="fa-solid fa-person-dress"></i>
+                        Empower Women
+                    </h3>
+
+                    <p>
+                        Support skilled rural women in
+                        home-based production, food
+                        preparation, catering and
+                        other income-generating activities.
+                    </p>
+
+                </div>
+
+                <div class="activity">
+
+                    <h3>
+                        <i class="fa-solid fa-people-group"></i>
+                        Build Local Institutions
+                    </h3>
+
+                    <p>
+                        Organise people, strengthen skills
+                        and encourage collective action
+                        for sustainable community development.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!--
 <section class="why-us">
 
     <div class="container">
@@ -325,7 +483,7 @@
         <div class="section-heading">
 
     <span>What We Do?</span>
-    <br> <br><br>
+    
 
     <h2>
         <i class="fa-solid fa-briefcase"></i>
@@ -376,63 +534,240 @@
         community development.
     </p>
 
-</div>
+  </div>
 
 
         
 
-      <!--  <div class="why-grid">
+ </div>
 
-            <article class="why-card">
+</section> -->
 
-                <div class="why-icon">
-                    <i class="fas fa-leaf"></i>
+<!--------------------------------------------------
+
+Experimental SHAPE WRAPPED wHY US SECTION
+--------------------------------------------------------->
+
+
+<section class="shp-what-we-do">
+
+    <div class="container">
+
+        <span class="shp-label" style="display:block; text-align:center;display: block;
+  letter-spacing: 4px;
+  color: var(--green);
+  font-weight: 400;
+  margin-bottom: 5em;">
+            WHAT WE DO
+        </span>
+
+        <div class="shp-layout">
+
+            <div class="shp-wheel">
+
+                <img
+                    src="images/hero/GUK_ecosystem.png"
+                    alt="GUK Ecosystem">
+
+            </div>
+
+            <div class="shp-content">
+
+                <div class="shp-activity shp-a1">
+
+                    <h3>
+                        <i class="fa-solid fa-briefcase"></i>
+                        Create Livelihoods
+                    </h3>
+
+                    <p>
+                        Develop practical employment and self-employment
+                        opportunities for rural households, women,
+                        youth, farmers and local workers.
+                    </p>
+
                 </div>
 
-                <h3>Chemical-Free</h3>
+                <div class="shp-activity shp-a2">
 
-                <p>
-                    <b>Naturally cultivated produce</b> sourced with care for
-                    <b>freshness and quality</b>.
-                </p>
+                    <h3>
+                        <i class="fa-solid fa-tags"></i>
+                        Promote Local Products
+                    </h3>
 
-            </article>
+                    <p>
+                        Support the promotion and sale of home-made,
+                        agricultural and locally produced products.
+                    </p>
 
-            <article class="why-card">
-
-                <div class="why-icon">
-                    <i class="fas fa-seedling"></i>
                 </div>
 
-                <h3>Trusted Farmers</h3>
+                <div class="shp-activity shp-a3">
 
-                <p>
-                    We work directly with <b>reliable farming partners</b> who
-                    share our <b>commitment to quality</b>.
-                </p>
+                    <h3>
+                        <i class="fa-solid fa-globe"></i>
+                        Connect to Markets
+                    </h3>
 
-            </article>
+                    <p>
+                        Create opportunities for local producers and
+                        service providers to reach customers,
+                        institutions and wider markets.
+                    </p>
 
-            <article class="why-card">
-
-                <div class="why-icon">
-                    <i class="fas fa-truck"></i>
                 </div>
 
-                <h3>Reliable Supply</h3>
+                <div class="shp-activity shp-a4">
 
-                <p>
-                    Consistent sourcing for <b>restaurants, hotels,
-                    caterers, corporate cafetarias and institutions</b>.
-                </p>
+                    <h3>
+                        <i class="fa-solid fa-person-dress"></i>
+                        Empower Women
+                    </h3>
 
-            </article>
+                    <p>
+                        Support skilled rural women in home-based
+                        production, food preparation, catering and
+                        other income-generating activities.
+                    </p>
 
-        </div> -->
+                </div>
+
+                <div class="shp-activity shp-a5">
+
+                    <h3>
+                        <i class="fa-solid fa-people-group"></i>
+                        Build Local Institutions
+                    </h3>
+
+                    <p>
+                        Organise people, strengthen skills and encourage
+                        collective action for sustainable community
+                        development.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
 
 </section>
+
+
+
+
+
+<!--------------------------------------------------
+
+Our Ecosystem
+--------------------------------------------------------->
+
+<section class="ecosystem">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>THE GUK ECOSYSTEM</span>
+
+            <h2>One Platform. Many People. <BR>Many Opportunities.</h2>
+
+            <p>
+                <b>Grameena Utpanna Kendra</b> connects <b>rural producers,
+                skills and services</b> with <br><b>urban consumer,
+                businesses and opportunities</b> — creating ,<b>shared growth
+                for everyone involved.</b>
+            </p>
+
+        </div>
+
+        <div class="ecosystem-grid">
+
+            <!-- Rural -->
+
+            <div class="ecosystem-card rural">
+
+                <div class="ecosystem-icon" style="text-align: center;">
+                    🌾
+                </div>
+
+                <h3>Rural Community</h3>
+
+                <ul>
+                    <li>Farmers</li>
+                    <li>Rural Women</li>
+                    <li>Local Producers</li>
+                    <li>Home-Based Entrepreneurs</li>
+                    <li>Village Youth</li>
+                    <li>Skilled Workers</li>
+                    <li>Artisans</li>
+                </ul>
+
+                <div class="ecosystem-action">
+                    PRODUCE • PROMOTE • SELL • EARN
+                </div>
+
+            </div>
+
+            <!-- Connector -->
+
+            <div class="ecosystem-bridge">
+
+                <div class="bridge-circle">
+
+                    <strong>GUK</strong>
+
+                    <span>Connects</span>
+
+                    <div class="circle-arrow">
+                          →
+                    </div>
+                    
+
+                </div>
+
+                <!-- <div class="bridge-arrow"></div> -->
+
+            </div>
+
+            <!-- Urban -->
+
+            <div class="ecosystem-card urban">
+
+                <div class="ecosystem-icon">
+                    🏙️
+                </div>
+
+                <h3>Urban Community</h3>
+
+                <ul>
+                    <li>Families</li>
+                    <li>Consumers</li>
+                    <li>Students</li>
+                    <li>Professionals</li>
+                    <li>Businesses</li>
+                    <li>Institutions</li>
+                    <!--<li>Service Seekers</li>  commented for ui-size-harmony-->
+                    <li>Entrepreneurs</li>
+                </ul>
+
+                <div class="ecosystem-action">
+                    BUY • ACCESS • LEARN • WORK • PARTICIPATE
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
 <!--------------------------------------------------
 
 Our Products
@@ -604,7 +939,7 @@ Multiple Opportunities. One Community.
 
                 <div class="movement-buttons">
 
-                    <a href="#homepage-enquiry-form"
+                    <a href="#idHomepageEnquiryForm"
                         class="movement-btn"
                         data-interest="member">
 
@@ -613,7 +948,7 @@ Multiple Opportunities. One Community.
 
                     </a>
 
-                    <a href="#homepage-enquiry-form"
+                    <a href="#idHomepageEnquiryForm"
                         class="movement-btn"
                         data-interest="seller">
 
@@ -622,7 +957,7 @@ Multiple Opportunities. One Community.
 
                     </a>
 
-                    <a href="#homepage-enquiry-form"
+                    <a href="#idHomepageEnquiryForm"
                         class="movement-btn"
                         data-interest="opportunities">
 
@@ -631,7 +966,7 @@ Multiple Opportunities. One Community.
 
                     </a>
 
-                    <a href="#homepage-enquiry-form"
+                    <a href="#idHomepageEnquiryForm"
                         class="movement-btn"
                         data-interest="support">
 
@@ -702,17 +1037,27 @@ Multiple Opportunities. One Community.
 
             <ul>
 
+              
+
+
                 <li><a href="index.html">Home</a></li>
 
                 <li><a href="about.html">About</a></li>
 
                 <li><a href="products.html">Products & Services</a></li>
 
-                <li><a href="outlets.html">Our Outlets</a></li>
+                <li><a href="opportunities.html">Opportunities</a></li>
 
-                <li><a href="subscriptions.html">Subscriptions</a></li>
+                <li><a href="earning_platforms.html">Earning Platforms</a></li>
 
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="get_involved.html">Get involved</a></li>
+
+                <li><a href="join.html">Join us</a></li>
+
+
+
+
+
 
             </ul>
 

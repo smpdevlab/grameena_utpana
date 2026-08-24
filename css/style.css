@@ -415,6 +415,12 @@ color: #363637;
 
 }
 
+.newHero-features div span{
+    font-weight: 360;
+}
+
+
+
 
 /* ===================================================
    ENQUIRY CARD
@@ -592,9 +598,11 @@ color: #363637;
 
 .why-us{
 
-    padding:100px 0;
+   /* padding:100px 0; */
 
     background:#faf9f5;
+    padding-bottom: 0.8em;
+    
 
 }
 
@@ -612,7 +620,7 @@ color: #363637;
 
     display:inline-block;
 
-    color:var(--green);
+    color:#5b7f32;
 
     letter-spacing:5px;
 
@@ -626,7 +634,7 @@ color: #363637;
 
     font-size:2.6rem;
 
-    color:var(--green);
+    color:#5b7f32;
 
     margin-bottom:18px;
 
@@ -729,7 +737,7 @@ color: #363637;
     display: flex;
     align-items: center;
     gap: 12px;
-    font-size: 1.6em;
+    font-size: 1em;
     margin:0.1em;
 }
 
@@ -749,7 +757,13 @@ section.why-us div.container div.section-heading h2 i{
     border-radius: 50%;
     background: #e8f5e9;
     color: #2e7d32;
-    font-size: 1.2em;
+    font-size: 1em;
+   
+}
+
+section.why-us div.container div.section-heading h2{
+     margin-top:2.8em;
+    
 }
 
 
@@ -4612,16 +4626,24 @@ Opportunities section
 
     line-height: 0;
 
+    text-decoration: underline;
+
+     text-align: center;
+
 
 }
 
 .newHero-content h2 {
 
-    font-size: 0.88em;
+    font-size: 0.9em;
   margin-bottom: 1.5rem;
   font-weight: 100;
   margin-top: -1.1em;
   color: #5a5858;
+
+  padding: 0.1em;
+
+    text-align: center;
 
 }
 
@@ -4637,6 +4659,8 @@ Opportunities section
     max-width: 58ch;
     line-height: 1.6;
     color: #444;
+    font-size: 1em;
+    font-weight: 200;
 
 }
 
@@ -4653,6 +4677,11 @@ Opportunities section
     margin-top: 2rem;
 
     flex-wrap: wrap;
+    color:#5b7f32;
+
+    
+  font-size: 1.2em;
+  margin-top:2.8em;
 
 }
 
@@ -4712,6 +4741,19 @@ Opportunities section
 
 }
 
+
+.form-error{
+
+    color:#c0392b;
+
+    font-size:0.9rem;
+
+    margin-top:6px;
+
+    min-height:20px;
+
+}
+
 /* ==========================================
    FORM ELEMENTS
 ========================================== */
@@ -4745,7 +4787,7 @@ Opportunities section
     border-radius: 10px;
 
     /*background: var(--primary-color);*/
-    background: green;
+    background: #5b7f32;
 
     color: white;
 
@@ -4765,6 +4807,11 @@ Opportunities section
 
 @media (max-width: 768px) {
 
+
+    .newHero-content{
+        margin-top: 10em;
+    }
+
     .newHero-bottom {
 
         grid-template-columns: 1fr;
@@ -4783,6 +4830,11 @@ Opportunities section
 
         font-size: 1.75rem;
 
+    }
+
+    .newHero-features{
+        display: grid;
+        place-items: center;
     }
 
 }
@@ -4833,12 +4885,18 @@ Opportunities section
 }
 
 .newHero-content h1{
-    font-size: 1.8em;
+    font-size: 1.4em;
+    line-height: 1.1em;
+}
+
+.newHero-content h2{
+   margin-top: -2.2em;
+   font-size: 0.8em; 
 }
 
 .why-us .container div.section-heading h2{
     text-align: left;
-    font-size: 1.25em;
+    font-size: 1em;
 }
 
 .newHero-formCard {
@@ -4885,5 +4943,980 @@ Hero form css
     border-color: #2e7d32;
 
     outline: none;
+
+}
+
+
+/*****************************************************
+Our Ecosystem
+****************************************************/
+.ecosystem{
+
+    padding:100px 0;
+    background:#f7f7f3;
+
+}
+
+.section-heading{
+
+    text-align:center;
+    max-width:800px;
+    margin:0 auto 70px;
+
+}
+
+.section-heading span{
+
+    display:block;
+    letter-spacing:4px;
+    color:var(--green);
+    font-weight:600;
+    margin-bottom:12px;
+
+}
+
+.section-heading h2{
+
+    margin-bottom:20px;
+
+}
+
+.section-heading p{
+
+    color:#666;
+    line-height:1.8;
+
+}
+
+.ecosystem-grid{
+
+    display:grid;
+    grid-template-columns:1fr 180px 1fr;
+    gap:40px;
+    align-items:center;
+    font-size: 0.9em;
+
+}
+
+.ecosystem-card{
+
+    background:#fff;
+    padding:50px;
+    border-radius:10%;
+    box-shadow:0 15px 40px rgba(0,0,0,.06);
+    text-align: center;
+
+}
+
+.ecosystem-icon{
+
+    font-size:50px;
+    margin-bottom:5px;
+    text-align: center;
+    margin-top: -10px;
+
+}
+
+.ecosystem-card h3{
+
+    margin-bottom:25px;
+    color:var(--green);
+    text-align: center;
+
+}
+
+.ecosystem-card ul{
+
+    list-style:none;
+    padding:0;
+    margin:0 0 30px;
+
+}
+
+.ecosystem-card li{
+
+    padding:10px 0;
+    border-bottom:1px solid #eee;
+
+}
+
+.ecosystem-action{
+
+    background:#5b7f32;
+    color:#fff;
+    text-align:center;
+    padding:16px;
+    border-radius:12px;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:1px;
+
+}
+
+.ecosystem-bridge{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+}
+
+.bridge-circle{
+
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    background:#5b7f32;
+    color:#fff;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.bridge-circle strong{
+
+    font-size:20px;
+
+}
+
+.bridge-circle span{
+
+    font-size:13px;
+    letter-spacing:1px;
+
+}
+
+.bridge-arrow{
+
+    width:120px;
+    height:4px;
+    background:var(--green);
+    margin-top:25px;
+    position:relative;
+
+}
+
+.bridge-arrow::after{
+
+    content:'';
+    position:absolute;
+    right:-10px;
+    top:-6px;
+
+    border-left:14px solid var(--green);
+    border-top:8px solid transparent;
+    border-bottom:8px solid transparent;
+
+}
+
+
+.circle-arrow{
+
+    font-size:38px;
+    line-height:1;
+    margin-top:-16px;
+    font-weight: bold;
+
+}
+
+
+/* ==========================
+   ECOSYSTEM - MOBILE
+========================== */
+
+@media (max-width:768px){
+
+    .ecosystem{
+
+        overflow:hidden;
+        padding:70px 0;
+
+    }
+
+    .ecosystem-grid{
+
+        grid-template-columns:1fr;
+        gap:30px;
+
+    }
+
+    .ecosystem-card{
+
+        padding:30px;
+        text-align:center;
+
+    }
+
+    .ecosystem-card ul{
+
+        max-width:260px;
+        margin:0 auto 25px;
+        text-align:center;
+
+    }
+
+    .ecosystem-card li{
+
+        padding:12px 0;
+
+    }
+
+    .ecosystem-bridge{
+
+        order:2;
+
+    }
+
+    .bridge-circle{
+
+        width:110px;
+        height:110px;
+        margin:0 auto;
+
+    }
+
+    .bridge-circle strong{
+
+        font-size:20px;
+
+    }
+
+    .bridge-circle span{
+
+        font-size:12px;
+
+    }
+
+    .bridge-arrow{
+
+        display:none;
+
+    }
+
+
+    /************ correction *****************/
+
+    .ecosystem-grid{
+
+        display:flex;
+        flex-direction:column;
+
+    }
+
+    .rural{
+        order:1;
+    }
+
+    .ecosystem-bridge{
+        order:2;
+    }
+
+    .urban{
+        order:3;
+    }
+
+
+    /* arrow rotate */
+
+    .ecosystem-grid{
+
+        display:flex;
+        flex-direction:column;
+        gap:24px;
+
+    }
+
+    .bridge-circle{
+
+        width:120px;
+        height:120px;
+
+    }
+
+    .circle-arrow{
+
+        font-size:24px;
+        transform:rotate(90deg);
+        padding: 18px;
+
+    }
+
+}
+
+/***********************************************************
+    Misc
+ **********************************************************/
+.fancy-underline {
+  position: relative;
+  text-decoration: none; /* Removes the default <u> line */
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Create the custom underline */
+.fancy-underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0); /* Starts invisible at 0 width */
+  height: 3px;          /* Controls line thickness */
+  bottom: -5px;         /* Controls spacing below text */
+  left: 0;
+  background-color: #5b7f32; /* Line color */
+  transform-origin: bottom center;
+  
+  /* The slow animation config */
+  transition: transform 0.6s ease-in-out; 
+  
+}
+
+/* Trigger the animation on hover */
+.fancy-underline:hover::after {
+  transform: scaleX(0.5); /* Expands to full width */
+}
+
+
+
+
+/* ======================================
+   WHAT WE DO (Ecosystem doughnut wheel)
+====================================== */
+
+.what-we-do{
+
+    padding:100px 0;
+    background:#faf9f5;
+
+}
+
+.what-we-do-grid{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    align-items:center;
+
+}
+
+/* LEFT */
+
+.what-we-do-visual{
+
+    text-align:center;
+
+}
+
+.what-we-do-visual img{
+
+    width:100%;
+    max-width:520px;
+
+}
+
+/* RIGHT */
+
+.section-label{
+
+    display:block;
+
+    color:var(--green);
+
+    letter-spacing:4px;
+
+    font-weight:600;
+
+    margin-bottom:35px;
+
+}
+
+.activity{
+
+    margin-bottom:38px;
+
+}
+
+.activity h3{
+
+    display:flex;
+    align-items:center;
+
+    gap:12px;
+
+    color:#5b7f32;
+
+    margin-bottom:10px;
+
+    font-size:1.15rem;
+
+}
+
+.activity h3 i{
+
+    width:42px;
+    height:42px;
+
+    border-radius:50%;
+
+    background:#e8f5e9;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    color:#2e7d32;
+
+    font-size:.95rem;
+
+}
+
+.activity p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    padding-left:54px;
+
+}
+
+
+/* ======================================
+  mobile  WHAT WE DO (Ecosystem doughnut wheel)
+====================================== */
+
+@media(max-width:768px){
+
+    .what-we-do{
+
+        padding:70px 0;
+
+    }
+
+    .what-we-do-grid{
+
+        grid-template-columns:1fr;
+
+        gap:50px;
+
+    }
+
+    .what-we-do-visual{
+
+        order:1;
+
+    }
+
+    .what-we-do-content{
+
+        order:2;
+
+    }
+
+    .what-we-do-visual img{
+
+        max-width:320px;
+
+    }
+
+    .activity h3{
+
+        font-size:1rem;
+
+    }
+
+    .activity p{
+
+        padding-left:0;
+
+    }
+
+}
+
+
+
+/* ==========================================
+   EXPERIMENTAL SHP WHAT WE DO
+========================================== */
+
+/* ==========================================
+   SHP WHAT WE DO
+========================================== */
+
+
+/*
+.shp-what-we-do{
+
+    padding:100px 0;
+    background:#faf9f5;
+
+}
+
+.shp-label{
+
+    display:block;
+    text-align:center;
+
+    letter-spacing:4px;
+    color:var(--green);
+
+    font-size:.9rem;
+    font-weight:600;
+
+    margin-bottom:60px;
+
+}
+
+.shp-layout{
+
+    position:relative;
+    min-height:750px;
+
+}
+
+.shp-wheel{
+
+    position:absolute;
+
+    left:0;
+    top:120px;
+
+    width:500px;
+    z-index:1;
+
+}
+
+.shp-wheel img{
+
+    width:100%;
+    display:block;
+
+}
+
+.shp-content{
+
+    position:relative;
+    z-index:2;
+
+}
+
+
+
+*/
+/* -------------------------
+   Activity Cards
+------------------------- */
+/*
+
+
+.shp-activity{
+
+    max-width:620px;
+    margin-bottom:45px;
+
+}
+
+.shp-activity h3{
+
+    display:flex;
+    align-items:center;
+
+    gap:12px;
+
+    color:#5b7f32;
+    margin-bottom:10px;
+
+}
+
+.shp-activity h3 i{
+
+    width:42px;
+    height:42px;
+
+    border-radius:50%;
+
+    background:#e8f5e9;
+
+    color:#2e7d32;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:.95rem;
+
+}
+
+.shp-activity p{
+
+    color:#666;
+    line-height:1.8;
+
+    padding-left:54px;
+
+}
+
+*/
+
+/* -------------------------
+   Wrap-around illusion
+------------------------- */
+/*
+.shp-a1{
+
+    margin-left:650px;
+
+}
+
+.shp-a2{
+
+    margin-left:560px;
+
+}
+
+.shp-a3{
+
+    margin-left:500px;
+
+}
+
+.shp-a4{
+
+    margin-left:560px;
+
+}
+
+.shp-a5{
+
+    margin-left:650px;
+
+}
+
+
+*/
+
+
+/* Desktop only */
+
+    .shp-layout{
+    display:flex !important;
+    align-items:center;
+    gap:60px;
+}
+
+.shp-wheel{
+    flex:0 0 45%;
+}
+
+.shp-content{
+    flex:0 0 55%;
+}
+
+
+
+
+    .shp-activity:nth-child(1){
+        transform: translateX(20px);
+    }
+
+    .shp-activity:nth-child(2){
+        transform: translateX(60px);
+    }
+
+    .shp-activity:nth-child(3){
+        transform: translateX(100px);
+    }
+
+    .shp-activity:nth-child(4){
+        transform: translateX(60px);
+    }
+
+    .shp-activity:nth-child(5){
+        transform: translateX(20px);
+    }
+
+
+
+
+/* ==========================================
+  eXPERIMENTAL mobile SHP WHAT WE DO
+========================================== */
+/*
+@media (max-width:768px){
+
+    .shp-layout{
+
+        min-height:auto;
+
+    }
+
+    .shp-wheel{
+
+        position:static;
+
+        width:280px;
+
+        margin:0 auto 40px;
+
+    }
+
+    .shp-a1,
+    .shp-a2,
+    .shp-a3,
+    .shp-a4,
+    .shp-a5{
+
+        margin-left:0;
+
+    }
+
+    .shp-activity{
+
+        max-width:100%;
+
+    }
+
+    .shp-activity p{
+
+        padding-left:0;
+
+    }
+*/
+
+
+/*
+    .shp-layout{
+        display:block;
+    }
+
+    .shp-wheel{
+        text-align:center;
+        margin-bottom:40px;
+    }
+
+    .shp-wheel img{
+        width:260px;
+        max-width:100%;
+    }
+
+    .shp-activity,
+    .shp-a1,
+    .shp-a2,
+    .shp-a3,
+    .shp-a4,
+    .shp-a5{
+
+        margin-left:0 !important;
+        transform:none !important;
+
+    }
+
+
+}
+*/
+
+/* ======================================
+   SHAPE SECTION - MOBILE
+====================================== */
+
+@media (max-width:768px){
+
+    .shp-what-we-do{
+
+        padding:70px 0;
+
+    }
+
+    .shp-label{
+
+        display:block;
+
+        text-align:center;
+
+        letter-spacing:4px;
+
+        color:var(--green);
+
+        font-size:.9rem;
+
+        font-weight:600;
+
+        margin-bottom:40px;
+
+    }
+
+    .shp-layout{
+
+        display:block;
+
+    }
+
+    /* Wheel first */
+
+    .shp-wheel{
+
+        text-align:center;
+
+        margin-bottom:50px;
+
+    }
+
+    .shp-wheel img{
+
+        width:100%;
+
+        max-width:320px;
+
+    }
+
+    /* Text after wheel */
+
+    .shp-content{
+
+        margin-top:0;
+
+    }
+
+    /* Kill all shape effects */
+
+    .shp-activity,
+    .shp-a1,
+    .shp-a2,
+    .shp-a3,
+    .shp-a4,
+    .shp-a5{
+
+        margin-left:0 !important;
+
+        transform:none !important;
+
+    }
+
+    .shp-activity{
+
+        margin-bottom:35px;
+
+    }
+
+    .shp-activity h3{
+
+        display:flex;
+
+        align-items:center;
+
+        gap:12px;
+
+        color:#5b7f32;
+
+        font-size:1rem;
+
+        margin-bottom:10px;
+
+    }
+
+    .shp-activity h3 i{
+
+        width:42px;
+
+        height:42px;
+
+        border-radius:50%;
+
+        background:#e8f5e9;
+
+        color:#2e7d32;
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:center;
+
+        flex-shrink:0;
+
+        font-size:.95rem;
+
+    }
+
+    .shp-activity p{
+
+        color:#666;
+
+        line-height:1.8;
+
+        padding-left:54px;
+
+        margin:0;
+
+    }
+
+}
+
+
+/*****************************************
+  shape GUK ecosystem 
+  hide shape-wrapped in mobile and display it in desktop; 
+
+   display non-shape-wrapped in mobile  and hide it  in desktop;
+
+  **************************************/
+
+  /* Desktop */
+
+@media (min-width:769px){
+
+    .what-we-do{
+        display:none;
+    }
+
+    .shp-what-we-do{
+        display:block;
+    }
+
+    .shp-activity h3{
+        color: #5b7f32;
+        font-weight: 280;
+    }
+
+    .shp-activity p{
+        
+        font-weight: 280;
+    }
+
+    div.shp-activity{
+        padding-bottom:1.6em;
+        margin-left: -2.8em;
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    .what-we-do{
+        display:block;
+    }
+
+    .shp-what-we-do{
+        display:none;
+    }
+
+
+    .activity h3{
+        color: #5b7f32;
+        font-weight: 400;
+    }
+
+    .activity p{
+        
+        font-weight: 400;
+    }
 
 }

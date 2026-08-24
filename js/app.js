@@ -835,39 +835,119 @@ if (contactForm) {
 
 
 
+/*********************************************
+ * 
+ * Enquiry form validation
+ * 
+ * 
+ * *******************************************/
+/*
+const enquiryFormNw =
+    document.getElementById("idHomepageEnquiryForm");
+    console.log("Enquire form loc");
 
+if (enquiryFormNw) {
 
+    enquiryFormNw.addEventListener(
+        "submit",
+        function (event) {
+
+            const mobileNumber =
+                document
+                    .getElementById("idMobileNumber")
+                    .value
+                    .trim();
+
+            const mobileRegex =
+                /^[6-9]\d{9}$/;
+
+            if (!mobileRegex.test(mobileNumber)) {
+
+                alert(
+                    "Please enter a valid 10-digit mobile number."
+                );
+
+                event.preventDefault();
+
+            }
+
+        }
+    );
+
+}
+
+*/
 
 
 /************************************************************************
-   
-Enquirey form and the interset-panel tieup
- * ********************************************************************* */
+ Homepage Enquiry Form Validation
+************************************************************************/
 
-const enquiryForm1 =
-    document.getElementById("homepage-enquiry-form");
+const enquiryFormNw =
+    document.getElementById("idHomepageEnquiryForm");
+
+const mobileError =
+    document.getElementById("mobileError");
+
+if (enquiryFormNw) {
+
+    enquiryFormNw.addEventListener(
+        "submit",
+        function (event) {
+
+            const mobileNumber =
+                document
+                    .getElementById("idMobileNumber")
+                    .value
+                    .trim();
+
+            const mobileRegex =
+                /^[6-9]\d{9}$/;
+
+            if (!mobileRegex.test(mobileNumber)) {
+
+                event.preventDefault();
+
+                mobileError.textContent =
+                    "Please enter a valid 10-digit mobile number.";
+
+                return;
+
+            }
+
+            mobileError.textContent = "";
+
+        }
+    );
+
+}
+
+
+/************************************************************************
+ Movement CTA Buttons → Enquiry Form Interest Selection
+************************************************************************/
+
+/*const enquiryForm =
+    document.getElementById("idHomepageEnquiryForm"); */
 
 const interestSelect =
-    document.getElementById("newHero-interest");
+    document.getElementById("idNewHeroInterest");
 
-if (enquiryForm1 && interestSelect) {
+if (enquiryFormNw && interestSelect) {
 
-    document.querySelectorAll("[data-interest]")
+    document
+        .querySelectorAll(".movement-btn")
         .forEach((button) => {
 
             button.addEventListener(
                 "click",
-                () => {
+                function () {
 
                     const interest =
-                        button.dataset.interest;
+                        this.dataset.interest;
 
                     interestSelect.value =
                         interest;
-
-                    enquiryForm1.scrollIntoView({
-                        behavior: "smooth"
-                    });
 
                 }
             );
