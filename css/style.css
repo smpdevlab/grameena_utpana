@@ -6016,3 +6016,455 @@ Our Ecosystem
 }
 
 
+
+/* ======================================
+   ABOUT PAGE
+====================================== */
+
+/* ==========================
+   PAGE BANNER
+========================== */
+
+.abt-banner{
+
+    padding:120px 0 80px;
+
+    background:#faf9f5;
+
+}
+
+.abt-banner-label{
+
+    display:block;
+
+    color:var(--green);
+
+    letter-spacing:4px;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+.abt-banner-title{
+
+    font-size:2.5rem;
+
+    line-height:1.15;
+
+    margin-bottom:25px;
+
+    max-width:900px;
+
+}
+
+.abt-banner-text{
+
+    max-width:700px;
+
+    font-size:1.1rem;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+
+/* ==========================
+   INTRO
+========================== */
+
+.abt-intro{
+
+    padding:100px 0;
+
+    background:#fff;
+
+}
+
+.abt-intro-grid{
+
+    display:grid;
+
+    grid-template-columns:1.1fr .9fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.abt-intro-content h2{
+
+    margin-bottom:25px;
+
+    color:#2f2f2f;
+
+}
+
+.abt-intro-content p{
+
+    margin-bottom:18px;
+
+    color:#666;
+
+    line-height:1.9;
+
+}
+
+.abt-intro-image img{
+
+    width:100%;
+
+    border-radius:18px;
+
+    display:block;
+
+}
+
+
+/* ==========================
+   VISION MISSION
+========================== */
+
+.abt-vm{
+
+    padding:100px 0;
+
+    background:#faf9f5;
+
+}
+
+.abt-vm-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:35px;
+
+}
+
+.abt-vm-card{
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.04);
+
+}
+
+.abt-vm-card i{
+
+    font-size:2rem;
+
+    color:var(--green);
+
+    margin-bottom:20px;
+
+}
+
+.abt-vm-card h3{
+
+    margin-bottom:20px;
+
+    color:#5b7f32;
+
+}
+
+.abt-vm-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+.abt-vm-card ul{
+
+    padding-left:20px;
+
+}
+
+.abt-vm-card li{
+
+    margin-bottom:10px;
+
+    color:#666;
+
+    line-height:1.7;
+
+}
+
+
+/* ==========================
+   SECTION HEADING
+========================== */
+
+.abt-section-heading{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.abt-section-heading span{
+
+    display:block;
+
+    color:var(--green);
+
+    letter-spacing:4px;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    margin-bottom:15px;
+
+}
+
+.abt-section-heading h2{
+
+    color:#5b7f32;
+
+    font-size:2.5rem;
+
+}
+
+
+/* ==========================
+   PRINCIPLES
+========================== */
+
+.abt-principles{
+
+    padding:110px 0;
+
+    background:#fff;
+
+}
+
+.abt-principles-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.abt-principle-card{
+
+    background:#faf9f5;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    transition:.3s;
+
+}
+
+.abt-principle-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.abt-principle-card h3{
+
+    color:#5b7f32;
+
+    margin-bottom:15px;
+
+    font-size:1.1rem;
+
+}
+
+.abt-principle-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+
+/* ==========================
+   VALUES + APPROACH
+========================== */
+
+.abt-values-approach{
+
+    padding:110px 0;
+
+    background:#faf9f5;
+
+}
+
+.abt-values-box{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.abt-values-box h2{
+
+    margin-bottom:25px;
+
+}
+
+.abt-values-list{
+
+    max-width:900px;
+
+    margin:auto;
+
+    color:#666;
+
+    line-height:2;
+
+    font-weight:500;
+
+}
+
+.abt-approach-box{
+
+    text-align:center;
+
+}
+
+.abt-approach-box h2{
+
+    margin-bottom:35px;
+
+}
+
+.abt-approach-flow{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+    margin-bottom:35px;
+
+}
+
+.abt-approach-flow span{
+
+    background:#fff;
+
+    padding:12px 20px;
+
+    border-radius:999px;
+
+    font-weight:600;
+
+    color:#5b7f32;
+
+}
+
+.abt-approach-flow i{
+
+    color:var(--green);
+
+}
+
+.abt-approach-box p{
+
+    max-width:850px;
+
+    margin:auto;
+
+    color:#666;
+
+    line-height:1.9;
+
+}
+
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+    .abt-banner{
+
+        padding:90px 0 60px;
+
+    }
+
+    .abt-banner-title{
+
+        font-size:2rem;
+
+    }
+
+    .abt-intro-grid{
+
+        grid-template-columns:1fr;
+
+        gap:40px;
+
+    }
+
+    .abt-intro-image{
+
+        order:-1;
+
+    }
+
+    .abt-vm-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .abt-principles-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .abt-section-heading h2{
+
+        font-size:2rem;
+
+    }
+
+    .abt-approach-flow{
+
+        flex-direction:column;
+
+        gap:10px;
+
+    }
+
+    .abt-approach-flow i{
+
+        transform:rotate(90deg);
+
+    }
+
+}
+
+
