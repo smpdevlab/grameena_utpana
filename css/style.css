@@ -4629,6 +4629,8 @@ Opportunities section
     text-decoration: underline;
 
      text-align: center;
+     
+     margin-top: 1.8em;
 
 
 }
@@ -5920,3 +5922,97 @@ Our Ecosystem
     }
 
 }
+
+
+
+/* =====================================
+   GLOBAL JOIN US BUTTON
+===================================== */
+
+.header-join-btn{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:10px 22px;
+
+    background:#5b7f32;
+    color:#fff;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-size:.92rem;
+    font-weight:600;
+
+    transition:.3s ease;
+
+    white-space:nowrap;
+
+}
+
+.header-join-btn:hover{
+
+    background:#486628;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 20px rgba(91,127,50,.25);
+
+}
+
+/**************** subtle pulse animation ***********/
+
+.header-join-btn{
+
+    animation: joinPulse 2.5s infinite;
+}
+
+@keyframes joinPulse{
+
+    0%{
+        box-shadow:0 0 0 0 rgba(91,127,50,.35);
+    }
+
+    70%{
+        box-shadow:0 0 0 10px rgba(91,127,50,0);
+    }
+
+    100%{
+        box-shadow:0 0 0 0 rgba(91,127,50,0);
+    }
+
+}
+
+
+
+/* =====================================
+  GLOBAL JOIN US BUTTON (mobile positioning)
+===================================== */
+
+@media(max-width:768px){
+
+    .header .container{
+
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+
+    }
+
+    .header-join-btn{
+
+        padding:7px 14px;
+
+        font-size:.8rem;
+
+        margin-left:auto;
+        margin-right:12px;
+
+    }
+
+}
+
+
