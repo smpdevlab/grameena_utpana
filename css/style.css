@@ -4628,7 +4628,7 @@ Opportunities section
 
     text-decoration: underline;
 
-     text-align: center;
+     text-align: left;
      
      margin-top: 1.8em;
 
@@ -4645,7 +4645,7 @@ Opportunities section
 
   padding: 0.1em;
 
-    text-align: center;
+    text-align: left;
 
 }
 
@@ -6051,11 +6051,11 @@ Our Ecosystem
 
 .abt-banner-title{
 
-    font-size:2.5rem;
+    font-size:1.6rem;
 
-    line-height:1.15;
+    line-height:1.6;
 
-    margin-bottom:25px;
+    margin-bottom:16px;
 
     max-width:900px;
 
@@ -6069,7 +6069,7 @@ Our Ecosystem
 
     color:#666;
 
-    line-height:1.8;
+    line-height:1.6;
 
 }
 
@@ -6300,6 +6300,32 @@ Our Ecosystem
 }
 
 
+.abt-principles-mobile{
+    display:none;
+}
+
+.abt-principles-desktop{
+    display:block;
+    width:100%;
+}
+
+
+/* MOBILE about : principles */
+
+@media (max-width:768px){
+
+    .abt-principles-desktop{
+        display:none;
+    }
+
+    .abt-principles-mobile{
+        display:block;
+        width:100%;
+    }
+
+}
+
+
 /* ==========================
    VALUES + APPROACH
 ========================== */
@@ -6415,7 +6441,7 @@ Our Ecosystem
 
     .abt-banner-title{
 
-        font-size:2rem;
+        font-size:1.2rem;
 
     }
 
