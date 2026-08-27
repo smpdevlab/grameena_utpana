@@ -6307,6 +6307,7 @@ Our Ecosystem
 .abt-principles-desktop{
     display:block;
     width:100%;
+    margin-bottom:2em;
 }
 
 
@@ -6321,6 +6322,7 @@ Our Ecosystem
     .abt-principles-mobile{
         display:block;
         width:100%;
+        margin-bottom:2em;
     }
 
 }
