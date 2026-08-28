@@ -6063,9 +6063,13 @@ Our Ecosystem
 
 .abt-banner-text{
 
-    max-width:700px;
+    max-width:780px;
 
     font-size:1.1rem;
+
+    font-size: 1em;
+        
+    font-weight: 100;
 
     color:#666;
 
@@ -6080,7 +6084,7 @@ Our Ecosystem
 
 .abt-intro{
 
-    padding:100px 0;
+    padding:1.6em 0;
 
     background:#fff;
 
@@ -6437,7 +6441,7 @@ Our Ecosystem
 
     .abt-banner{
 
-        padding:90px 0 60px;
+        padding:90px 0 40px;
 
     }
 
@@ -6445,6 +6449,11 @@ Our Ecosystem
 
         font-size:1.2rem;
 
+    }
+
+    .abt-banner-text{
+        font-size: 1em;
+        font-weight: 100;
     }
 
     .abt-intro-grid{
@@ -6458,6 +6467,7 @@ Our Ecosystem
     .abt-intro-image{
 
         order:-1;
+       /* margin-top: -3.2em; */
 
     }
 
@@ -6494,5 +6504,998 @@ Our Ecosystem
     }
 
 }
+
+
+
+/* ==========================================
+   PRODUCTS & SERVICES
+========================================== */
+
+.prodServ-hero{
+    padding:90px 0;
+}
+
+.prodServ-hero-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.prodServ-eyebrow{
+    
+
+    
+	display: block;
+	color: var(--green);
+	letter-spacing: 4px;
+	font-size: .85rem;
+	font-weight: 600;
+	margin-bottom: 20px;
+
+}
+
+.prodServ-hero h1{
+    max-width:650px;
+    margin-bottom:25px;
+
+    font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  max-width: 900px;
+}
+
+.prodServ-hero p{
+    max-width:620px;
+}
+
+.prodServ-objective-strip{
+    margin-top:35px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    align-items:center;
+    background:#f3f7ef;
+    border-left:5px solid var(--primary-color);
+    padding:18px 24px;
+    border-radius:14px;
+    font-weight:600;
+}
+
+.prodServ-hero-image img{
+    width:100%;
+    display:block;
+    border-radius:24px;
+    box-shadow:0 25px 60px rgba(0,0,0,.08);
+}
+
+.prodServ-products,
+.prodServ-farm,
+.prodServ-catering,
+.prodServ-bazaar,
+.prodServ-tuition,
+.prodServ-producer{
+    padding:90px 0;
+}
+
+.prodServ-section-heading{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.prodServ-section-heading span{
+    display:block;
+    color:var(--primary-color);
+    letter-spacing:3px;
+    font-size:.85rem;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.prodServ-product-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.prodServ-product-card{
+    background:#f8f8f5;
+    padding:35px;
+    border-radius:20px;
+}
+
+.prodServ-product-card h3{
+    margin-bottom:15px;
+    color:var(--primary-color);
+}
+
+.prodServ-highlight-box{
+    margin-top:40px;
+    text-align:center;
+    background:#f3f7ef;
+    padding:40px;
+    border-radius:20px;
+}
+
+.prodServ-highlight-box h3{
+    color:var(--primary-color);
+    margin-bottom:10px;
+}
+
+.prodServ-split-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.prodServ-image-box img{
+    width:100%;
+    border-radius:24px;
+    display:block;
+}
+
+.prodServ-tag{
+    display:inline-block;
+    color:var(--primary-color);
+    font-size:.8rem;
+    letter-spacing:3px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.prodServ-split-grid ul{
+    margin-top:25px;
+    padding-left:20px;
+}
+
+.prodServ-split-grid li{
+    margin-bottom:10px;
+}
+
+.prodServ-center-text{
+    max-width:700px;
+    margin:0 auto 35px;
+    text-align:center;
+}
+
+.prodServ-service-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:20px;
+}
+
+.prodServ-service-card{
+    background:#f8f8f5;
+    padding:25px;
+    border-radius:16px;
+    text-align:center;
+    font-weight:600;
+}
+
+.prodServ-banner-box{
+    background:#5b7f32;
+    color:#fff;
+    text-align:center;
+    padding:70px 40px;
+    border-radius:28px;
+}
+
+.prodServ-banner-box h2{
+    color:#fff;
+    margin-bottom:20px;
+    letter-spacing: 0.12em;
+}
+
+.prodServ-banner-box strong{
+    display:block;
+    margin-top:20px;
+    font-size:1.2rem;
+}
+
+.prodServ-cta-box{
+    background:#f8f8f5;
+    padding:70px;
+    border-radius:28px;
+    text-align:center;
+}
+
+.prodServ-cta-box span:first-child{
+    color:var(--primary-color);
+    letter-spacing:3px;
+    font-size:.85rem;
+    font-weight:700;
+}
+
+.prodServ-flow{
+    margin:30px 0;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    font-weight:600;
+}
+
+.prodServ-hero-grid{
+    display:grid;
+    gap:2rem;
+}
+
+.prodServ-hero-image img{
+    width:100%;
+    border-radius:24px;
+    display:block;
+}
+
+.prodServ-objective-box h3{
+    margin-top: -1.2em;
+}
+
+div.prodServ-hero-image{
+    margin-top: 2em;
+}
+
+
+/*****************************************/
+
+.prodServ-objective-desktop{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:0.75rem;
+}
+
+.prodServ-objective-desktop span:not(:last-child)::after{
+    content:"•";
+    color:#1f7a34;
+    margin-left:0.75rem;
+    font-weight:700;
+}
+
+/***********************************/
+
+
+
+
+
+
+@media(max-width:991px){
+
+    .prodServ-hero-grid,
+    .prodServ-split-grid{
+        grid-template-columns:1fr;
+    }
+
+    .prodServ-product-grid{
+        grid-template-columns:1fr;
+    }
+
+    .prodServ-service-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .prodServ-cta-box{
+        padding:40px 25px;
+    }
+}
+
+@media(max-width:767px){
+
+    .prodServ-hero{
+        padding:60px 0;
+    }
+
+    .prodServ-products,
+    .prodServ-farm,
+    .prodServ-catering,
+    .prodServ-bazaar,
+    .prodServ-tuition,
+    .prodServ-producer{
+        padding:60px 0;
+    }
+
+    .prodServ-service-grid{
+        grid-template-columns:1fr;
+    }
+
+    .prodServ-objective-strip{
+        justify-content:center;
+        text-align:center;
+    }
+
+    .prodServ-hero h1{
+        font-size: 1.6em;
+    }
+
+    div.prodServ-hero-image{
+    margin-top: 0.4em;
+    }
+
+     .prodServ-objective-box > p:nth-child(2){
+        font-size: 0.9em;
+     }
+}
+
+/***** mobile reordering *****/
+@media (max-width:768px){
+
+    .prodServ-hero-grid{
+        display:flex;
+        flex-direction:column;
+    }
+
+    .prodServ-hero-content{
+        order:1;
+    }
+
+    .prodServ-hero-image{
+        order:2;
+    }
+
+    .prodServ-objective-box{
+        order:3;
+    }
+
+}
+
+/******principle objective switch-Desktop-mobile*********/
+
+.prodServ-objective-mobile{
+    display:none;
+}
+
+@media (max-width:768px){
+
+    
+
+    .prodServ-objective-desktop{
+        display:none;
+    }
+
+    .prodServ-objective-mobile{
+        display:block;
+        margin:0;
+        padding-left:1.25rem;
+    }
+
+    .prodServ-objective-mobile li{
+        margin-bottom:.5rem;
+        color:var(--text-dark);
+        font-weight:500;
+    }
+
+    .prodServ-objective-mobile li:last-child{
+        margin-bottom:0;
+    }
+
+
+
+            .prodServ-objective-mobile{
+            /*display:flex;
+            flex-direction:column;
+           
+            padding:0;
+            list-style-type:disc;
+            text-align: left; */
+
+            display:block;
+            padding-left:1.5rem;
+            list-style-type:disc;
+        }
+
+        .prodServ-objective-mobile li::marker{
+            color:#1f7a34;
+        }
+
+        .prodServ-objective-mobile li{
+            
+            border-radius:999px;
+            
+            font-weight:600;
+            font-size: 0.9em;
+            font-weight: 100;
+        }
+
+        .prodServ-objective-box h3{
+            text-align: center;
+            font-weight: 100;
+            margin-top: 0.2em;
+            margin-bottom: 0.4em;
+            
+        }
+
+        .prodServ-objective-box{
+            border: 1px solid rgba(31,122,52,0.25);
+            border-radius: 16px;
+            padding: 1.5rem;
+        }
+
+}
+
+/***** reverse content-image order in mobile ******/
+@media (max-width: 768px) {
+
+    .prodServ-split-grid{
+        display:flex;
+        flex-direction:column;
+    }
+
+    .prodServ-image-box{
+        order:1;
+    }
+
+    .prodServ-farm-content{
+        order:2;
+    }
+
+}
+
+
+/************* products & services catering-part *******/
+
+.prodServ-catering{
+    padding:6rem 0;
+}
+
+.prodServ-catering-box{
+
+    background:#faf7f1;
+
+    border:2px solid #b8834d;
+
+    border-radius:32px;
+
+    padding:3rem;
+
+    position:relative;
+}
+
+.prodServ-catering-header{
+
+    display:grid;
+    grid-template-columns:220px 1fr;
+    gap:3rem;
+
+    align-items:center;
+}
+
+.prodServ-cook img{
+
+    width:100%;
+    max-width:200px;
+}
+
+.prodServ-catering-title{
+    text-align:center;
+}
+
+.prodServ-catering-title span{
+
+    display:block;
+
+    letter-spacing:4px;
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+    color:#7a4f25;
+
+    margin-bottom:1rem;
+}
+
+.prodServ-catering-title h2{
+
+    font-size:2.5rem;
+
+    color:#4d2f16;
+
+    margin-bottom:1rem;
+}
+
+.prodServ-catering-title p{
+
+    font-size:1.15rem;
+
+    color:#555;
+
+    max-width:650px;
+
+    margin:auto;
+}
+
+.prodServ-service-grid{
+
+    margin-top:3rem;
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:1.5rem;
+}
+
+.prodServ-service-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:2rem 1rem;
+
+    text-align:center;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.06);
+
+    transition:.3s;
+}
+
+.prodServ-service-card:hover{
+
+    transform:translateY(-5px);
+}
+
+.prodServ-service-card{
+
+    font-size:2rem;
+}
+
+.prodServ-service-card span{
+
+    display:block;
+
+    margin-top:1rem;
+
+    font-size:1rem;
+
+    font-weight:600;
+}
+
+.prodServ-catering-footer{
+
+    margin-top:3rem;
+
+    text-align:center;
+
+    font-size:1.15rem;
+
+    color:#444;
+}
+
+#IdpromoteProductBtn{
+        margin-top: 1.6em;
+        background-color: #5b7f32;
+    }
+
+
+@media(max-width:768px){
+
+    .prodServ-catering-box{
+        padding:2rem 1.25rem;
+        border-radius:24px;
+    }
+
+    .prodServ-catering-header{
+
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    
+    .prodServ-cook{
+    text-align:center;
+    margin-top:-60px;
+    margin-bottom:1.5rem;
+}
+
+.prodServ-cook img{
+    max-width: 100%;
+    height: 8em;
+    width: auto;
+    margin-bottom: -2em;
+}
+
+
+    .prodServ-catering-title h2{
+        font-size:1.4rem;
+    }
+
+    .prodServ-service-grid{
+
+        grid-template-columns:1fr 1fr;
+    }
+
+    
+}
+
+
+
+/******************* discount Bazaar ***************/
+
+.prodServ-banner-box{
+    position:relative;
+    overflow:hidden;
+
+    background:#5c8733;
+    border-radius:30px;
+
+    padding:5rem 3rem;
+
+    text-align:center;
+    color:#fff;
+}
+
+.prodServ-banner-box::before{
+    content:"🏷️";
+    position:absolute;
+    top:20px;
+    left:30px;
+
+    font-size:4rem;
+    opacity:.15;
+}
+
+.prodServ-banner-box::after{
+    content:"🛒";
+    position:absolute;
+    bottom:20px;
+    right:30px;
+
+    font-size:5rem;
+    opacity:.15;
+}
+
+
+/********************* products & services , dicount bazaaar version 2 *********/
+
+.prodServ-banner-box{
+
+    position:relative;
+
+    display:grid;
+    grid-template-columns:320px 1fr;
+
+    align-items:center;
+
+    gap:3rem;
+
+    padding:3rem;
+
+    background:#648d33;
+
+    border-radius:32px;
+
+    overflow:hidden;
+
+    color:#fff;
+
+}
+
+/* couple image */
+
+.prodServ-bazaar-couple{
+
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    position:absolute;
+    left:3rem;
+    bottom:0;
+
+}
+
+.prodServ-bazaar-couple img{
+
+    max-width:50%;
+    height:auto;
+    display:block;
+
+}
+
+/* content */
+
+.prodServ-bazaar-content{
+
+    text-align:center;
+
+}
+
+.prodServ-bazaar-tag{
+
+    display:inline-block;
+
+    letter-spacing:4px;
+
+    font-size:.8rem;
+
+    margin-bottom:1rem;
+
+    opacity:.9;
+
+}
+
+.prodServ-bazaar-content h2{
+
+    color:#fff;
+
+    margin-bottom:1rem;
+
+}
+
+.prodServ-bazaar-content p{
+
+    color:rgba(255,255,255,.95);
+
+    margin-bottom:1.5rem;
+
+    font-size:1.1rem;
+
+}
+
+.prodServ-bazaar-content strong{
+
+    display:block;
+
+    font-size:2rem;
+
+    color:#fff;
+
+    margin-bottom:2rem;
+
+}
+
+.prodServ-bazaar-badges{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:1rem;
+
+}
+
+.prodServ-bazaar-badges span{
+
+    background:rgba(255,255,255,.15);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    padding:.7rem 1.2rem;
+
+    border-radius:999px;
+
+}
+
+/********** discount bazaar v2 mobile **********/
+
+@media(max-width:768px){
+
+    .prodServ-banner-box{
+
+        grid-template-columns:1fr;
+
+        gap:1rem;
+
+        text-align:center;
+
+        padding:2rem 1.5rem;
+
+    }
+
+    .prodServ-bazaar-couple{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        position: absolute;
+        left: -2em;
+        bottom: 0;
+    }
+
+    .prodServ-bazaar-couple img{
+
+        
+        display: block;
+        width: 400px;
+        height: auto;
+
+    }
+
+    .prodServ-bazaar-content strong{
+
+        font-size:1.5rem;
+
+    }
+
+}
+
+
+
+/**************latest 1*************/
+
+/* ==========================================
+   DISCOUNT BAZAAR
+========================================== */
+
+.DiscBazr-section{
+    padding:5rem 0;
+}
+
+.DiscBazr-card{
+    position:relative;
+    display:grid;
+    grid-template-columns:340px 1fr;
+    align-items:center;
+    gap:3rem;
+
+    background:#648d33;
+    border-radius:32px;
+
+    padding:3.5rem;
+    overflow:hidden;
+}
+
+/* Decorative Icons */
+
+.DiscBazr-card::before{
+    content:"🏷️";
+    position:absolute;
+    top:30px;
+    left:40px;
+
+    font-size:3rem;
+    opacity:.12;
+}
+
+.DiscBazr-card::after{
+    content:"🛒";
+    position:absolute;
+    right:40px;
+    bottom:25px;
+
+    font-size:4rem;
+    opacity:.12;
+}
+
+/* Image */
+
+.DiscBazr-image{
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    height:100%;
+}
+
+.DiscBazr-image img{
+    width:100%;
+    max-width:320px;
+    display:block;
+    border-bottom: orange;
+    border-bottom-style: none;
+  border-style: groove;
+  border-radius: 45%;
+}
+
+/* Content */
+
+.DiscBazr-content{
+    color:#fff;
+}
+
+.DiscBazr-tag{
+    display:inline-block;
+
+    font-size:.9rem;
+    letter-spacing:5px;
+    text-transform:uppercase;
+
+    margin-bottom:1rem;
+
+    opacity:.9;
+}
+
+.DiscBazr-content h2{
+    font-size:3rem;
+    line-height:1.15;
+    color:#fff;
+
+    margin-bottom:1.5rem;
+}
+
+.DiscBazr-content p{
+    font-size:1.15rem;
+    line-height:1.8;
+
+    max-width:650px;
+
+    margin-bottom:2rem;
+
+    opacity:.95;
+}
+
+/* Badges */
+
+.DiscBazr-features{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1rem;
+}
+
+.DiscBazr-features span{
+    padding:.85rem 1.4rem;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.12);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    color:#fff;
+
+    font-weight:500;
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:768px){
+
+    .DiscBazr-card{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+        gap:2rem;
+
+        padding:2.5rem 1.75rem;
+    }
+
+    .DiscBazr-image{
+        order:-1;
+    }
+
+    .DiscBazr-image img{
+        max-width:220px;
+        
+    }
+
+    .DiscBazr-content h2{
+        font-size:2rem;
+    }
+
+    .DiscBazr-content p{
+        font-size:1rem;
+        max-width:none;
+    }
+
+    .DiscBazr-features{
+        justify-content:center;
+    }
+
+    .DiscBazr-card::before{
+        font-size:2rem;
+        top:20px;
+        left:20px;
+    }
+
+    .DiscBazr-card::after{
+        font-size:3rem;
+        right:20px;
+        bottom:20px;
+    }
+}
+
+
+
+
+
+
+
+/* ==========================================
+   end of PRODUCTS & SERVICES
+========================================== */
 
 
