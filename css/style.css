@@ -8638,7 +8638,7 @@ div.prodServ-hero-image{
 .getInv-partner-box{
     background:#648d33;
     color:#fff;
-    padding:4rem;
+    /*padding:4rem; */
     border-radius:30px;
     text-align:center;
 }
@@ -8744,7 +8744,7 @@ div.prodServ-hero-image{
     background:#fff;
     border:1px solid #e7e3d8;
     border-radius:24px;
-    padding:2rem;
+    /* padding:2rem; */
 }
 
 .getInv-form-box h3{
@@ -8854,7 +8854,7 @@ div.prodServ-hero-image{
     }
 
     .getInv-partner-box{
-        padding:2rem;
+        /*padding:2rem;*/
     }
 
     .getInv-community-box{
@@ -8909,9 +8909,9 @@ div.prodServ-hero-image{
 
 .getInv-form-box{
 
-    background:#fff;
+    /* background:#fff;
 
-    border:1px solid #e7e3d8;
+    border:1px solid #e7e3d8; */
 
     border-radius:24px;
 
@@ -8919,6 +8919,13 @@ div.prodServ-hero-image{
 
     box-shadow:
         0 10px 30px rgba(0,0,0,.05);
+}
+
+
+.getInv-form-box iframe{
+    width:100%;
+    border-radius: 25px;
+    
 }
 
 .getInv-form-icon{
@@ -8974,4 +8981,189 @@ div.prodServ-hero-image{
 
         justify-content:center;
     }
+}
+
+
+
+/********* Get Involved form captin css ********/
+
+.getInv-form-eyebrow{
+
+    display:block;
+
+    text-align:center;
+
+    color:#648d33;
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    margin-bottom:.75rem;
+}
+
+.getInv-form-box h3{
+
+    text-align:center;
+
+    margin-bottom:.75rem;
+
+    font-size:2rem;
+}
+
+.getInv-form-intro{
+
+    text-align:center;
+
+    margin-bottom:1.5rem;
+
+    color:#666;
+
+    font-size:.95rem;
+
+    line-height:1.6;
+}
+
+/*********** Get Involved : become a partner box image css*******************/
+/*
+
+.getInv-partner-image {
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    
+
+}
+
+.getInv-partner-image img {
+
+    max-width: 520px;
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+*/
+
+/* ==========================================
+   PARTNERSHIP
+========================================== */
+
+.getInv-partner{
+
+    padding:5rem 0;
+
+}
+
+.getInv-partner-box{
+
+    background:#648d33;
+    border-radius:32px;
+    overflow:hidden;
+
+}
+
+.getInv-partner-image{
+
+    line-height:0;
+    border-radius: 25%;
+
+}
+
+.getInv-partner-image img{
+
+    width:100%;
+    display:block;
+
+}
+
+.getInv-partner-content{
+
+    padding:3.5rem;
+    text-align:center;
+    color:#fff;
+
+}
+
+.getInv-partner-eyebrow{
+
+    display:block;
+
+    margin-bottom:1rem;
+
+    font-size:.85rem;
+    font-weight:700;
+
+    letter-spacing:.25em;
+
+    opacity:.95;
+
+}
+
+.getInv-partner-content h2{
+
+    font-size:1.5rem;
+
+    margin-bottom:1.25rem;
+
+    color:#fff;
+
+}
+
+.getInv-partner-content p{
+
+    max-width:850px;
+
+    margin:0 auto 2rem;
+
+    line-height:1.8;
+
+    font-size:0.9rem;
+
+}
+
+.getInv-partner-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:.85rem;
+
+    margin-bottom:2.5rem;
+
+}
+
+.getInv-partner-tags span{
+
+    background:rgba(255,255,255,.15);
+
+    padding:.5rem 1.25rem;
+
+    border-radius:999px;
+
+    font-size:.8rem;
+
+    font-weight:600;
+
+}
+
+.getInv-partner-content .btn-primary{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:240px;
+
 }
