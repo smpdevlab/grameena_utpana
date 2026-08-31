@@ -149,7 +149,7 @@
 
                  
 
-                <span class="getIncCTA-eyebrow">
+                <span class="getIncCTA-eyebrow" style="color: white;">
                     GET INVOLVED
                 </span>
 
@@ -250,27 +250,33 @@
                 </p>-->
 
                 <!-- form here -->
-                     <form>
+                     <form id="idGetInvolvedJoinusForm" 
+                    action="forms/save-enquiry_generic.php"
+                    method="POST">
 
                     <input
+                        name="full_name"
                         type="text"
-                        placeholder="Name">
+                        placeholder="Name"
+                        required>
 
                     <input
                         type="tel"
-                        placeholder="Mobile Number">
+                        name="phone"
+                        placeholder="Mobile Number"
+                        required>
 
-                    <input
+                    <!--<input
                         type="email"
-                        placeholder="Email">
+                        placeholder="Email">-->
 
-                    <input
+                    <!--<input
                         type="text"
-                        placeholder="Village / Location">
+                        placeholder="Village / Location">-->
 
                     <select
                         name="interest"
-                        required>
+                        >
 
                         <option value="">
                             I Am Interested In...
@@ -307,6 +313,7 @@
                     </select>
 
                     <textarea
+                        name="message"
                         rows="4"
                         placeholder="Message"></textarea>
 
@@ -475,7 +482,7 @@
 
                         <div class="getInv-card">
 
-                            <div class="getInv-icon">🍲</div>
+                            <div class="getInv-icon">🧑‍🍳</div>
 
                             <h3>Cook / Catering Worker</h3>
 

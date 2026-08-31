@@ -9235,6 +9235,8 @@ div.prodServ-hero-image{
     font-weight:700;
 
     margin-bottom:1rem;
+
+    color: #5b7f32;
 }
 
 .getIncCTA-content h1{
@@ -9274,6 +9276,7 @@ div.prodServ-hero-image{
 .getIncCTA-content{
 
     padding-top:.5rem;
+    padding-left:1em ;
 }
 
 .getIncCTA-image{
