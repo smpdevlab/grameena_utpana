@@ -20,7 +20,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = trim($_POST['username'] ?? '');
     $password = trim($_POST['password'] ?? '');
 
-    echo $username."  ".strlen($password);
+   
+
+    //exit();
 
     $stmt = $conn->prepare(
 
@@ -55,12 +57,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $admin = $result->fetch_assoc();
 
 
-
             $passwRes=password_verify(
                 trim($password),
                 $admin['password_hash']
-            );
-
+            ); 
 
 
         if (
