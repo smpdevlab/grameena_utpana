@@ -108,6 +108,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
+
+<!--
 <!DOCTYPE html>
 <html>
 <head>
@@ -117,13 +119,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <h2>Admin Login</h2>
 
-<?php if ($error): ?>
+<?php// if ($error): ?>
 
 <p style="color:red;">
-    <?php echo $error; ?>
+    <?php// echo $error; ?>
 </p>
 
-<?php endif; ?>
+<?php// endif; ?>
 
 <form method="POST">
 
@@ -151,3 +153,69 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 </body>
 </html>
+
+-->
+<?php
+
+require_once 'includes/header.php';
+?>
+
+    <div class="container">
+    <div class="card">
+
+        <div class="logo">
+            <img
+                src="/images/misc/logomin.png"
+                alt="Grameena Utpanna Kendra"
+            >
+        </div>
+
+        <h2>Admin Login</h2>
+
+        <!-- form -->
+
+
+        <?php if ($error): ?>
+
+        <p style="color:red;">
+        <?php echo $error; ?>
+        </p>
+
+        <?php endif; ?>
+
+            <form method="POST">
+
+                <input
+                    type="text"
+                    name="username"
+                    placeholder="Username"
+                    required>
+
+                <br><br>
+
+                <input
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    required>
+
+            <div class="forgot-link">
+                <a href="forgot-password.php">
+                    Forgot Password?
+                </a>
+            </div>
+
+                <br><br>
+
+                <button type="submit">
+                    Login
+                </button>
+
+            </form>
+
+    </div>
+</div>
+
+<?php
+require_once 'includes/footer.php';
+
