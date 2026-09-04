@@ -3,6 +3,7 @@
 require_once '../includes/db.php';
 require_once 'includes/send_mail.php';
 
+
 $message = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -139,7 +140,7 @@ $mailSent = sendEmail(
 
             }
 
-        echo "<hr>";
+       /* echo "<hr>";
         echo "<strong>Token:</strong><br>";
         echo $token;
 
@@ -148,7 +149,7 @@ $mailSent = sendEmail(
         echo "<strong>Expires:</strong><br>";
         echo $expiresAt;
 
-        echo "<hr>";
+        echo "<hr>"; */
 
     }
     else {
@@ -161,24 +162,33 @@ $mailSent = sendEmail(
 }
 ?>
 
-<!DOCTYPE html>
-<html>
+<?php
+require_once 'includes/header.php';
+?>
 
-<head>
-    <title>Forgot Password</title>
-</head>
+<div class="container">
 
-<body>
+    <div class="card">
 
-<h2>Forgot Password</h2>
+        <div class="logo">
+            <img
+                src="/images/misc/logomin_admin.png"
+                alt="Grameena Utpanna Kendra">
+        </div>
 
-<?php if ($message): ?>
+        <h1>Forgot Password</h1>
 
-<p>
-    <?php echo $message; ?>
-</p>
+        <p class="form-help">
+            Enter your administrator email address and we'll send a password reset link.
+        </p>
 
-<?php endif; ?>
+ <?php if ($message): ?>
+
+            <div class="message-box">
+                <?php echo htmlspecialchars($message); ?>
+            </div>
+
+        <?php endif; ?>
 
 <form method="POST">
 
@@ -191,10 +201,19 @@ $mailSent = sendEmail(
     <br><br>
 
     <button type="submit">
-        Generate Reset Token
-    </button>
+         Send Reset Link
+ </button>
 
-</form>
+   <div class="forgot-link">
+            <a href="/admin/index.php">
+                ← Back to Login
+            </a>
+        </div>
 
-</body>
-</html>
+    </div>
+
+</div>
+
+<?php
+require_once 'includes/footer.php';
+?>

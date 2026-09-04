@@ -165,7 +165,7 @@ require_once 'includes/header.php';
 
         <div class="logo">
             <img
-                src="/images/misc/logomin.png"
+                src="/images/misc/logomin_admin.png"
                 alt="Grameena Utpanna Kendra"
             >
         </div>

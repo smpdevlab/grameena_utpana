@@ -188,18 +188,18 @@ if (
 
 ?>
 
-<!DOCTYPE html>
-<html>
+<?php include 'includes/header.php'; ?>
 
-<head>
+<div class="container">
+<div class="card">
 
-    <title>
-        Reset Password
-    </title>
+ <div class="logo">
+        <img
+            src="/images/misc/logomin_admin.png"
+            alt="Grameena Utpanna Kendra"
+        >
+    </div>
 
-</head>
-
-<body>
 
 <h2>
     Reset Password
@@ -263,6 +263,7 @@ if (
 
 <?php endif; ?>
 
-</body>
+</div>
+</div>
 
-</html>
+<?php include 'includes/footer.php'; ?>
