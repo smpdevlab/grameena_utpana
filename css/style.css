@@ -154,9 +154,9 @@ section{
 }
 
 .logo img{
-    height:70px;
+    height:50px;
     width:auto;
-    margin:12px 0px;;
+    margin:12px 10px;;
     display:block;
 }
 
@@ -164,6 +164,7 @@ section{
 .nav{
 
     display:none;
+    font-size: 0.88em;
 
 }
 
@@ -2090,6 +2091,13 @@ div.footer-brand h3 a.logo img:hover{
 
     grid-template-columns:repeat(3,1fr);
 
+}
+
+.logo img{
+    height: 40px;
+  width: auto;
+  
+  display: block;
 }
 
 
@@ -4610,7 +4618,7 @@ Opportunities section
 
     margin-bottom: 2rem;
     color: green;
-    line-height: 1.1em;
+    
 
 
 
@@ -4624,7 +4632,7 @@ Opportunities section
 
     letter-spacing: 1px;
 
-    line-height: 0;
+    line-height: 1.2;
 
     text-decoration: underline;
 
@@ -5935,7 +5943,7 @@ Our Ecosystem
     align-items:center;
     justify-content:center;
 
-    padding:10px 22px;
+    padding:10px;
 
     background:#5b7f32;
     color:#fff;
@@ -5944,7 +5952,7 @@ Our Ecosystem
 
     text-decoration:none;
 
-    font-size:.92rem;
+    font-size:.80rem;
     font-weight:600;
 
     transition:.3s ease;
@@ -6004,12 +6012,17 @@ Our Ecosystem
 
     .header-join-btn{
 
-        padding:7px 14px;
+       /* padding:7px 14px;
 
         font-size:.8rem;
 
         margin-left:auto;
-        margin-right:12px;
+        margin-right:20px; */
+
+        margin-left: 20px;
+    margin-right: 8px;
+    font-size: 10px;
+    padding: 8px;
 
     }
 
@@ -9484,3 +9497,108 @@ div.prodServ-hero-image{
     }
 
 }
+
+
+/****************** Google Translate css begins here ***********/
+
+/* Hide Google top banner */
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+/* Remove space reserved for banner */
+body {
+    top: 0 !important;
+}
+
+/* Hide Google logo */
+.goog-logo-link {
+    display: none !important;
+}
+
+/* Hide "Powered by Google Translate" text */
+.goog-te-gadget {
+    font-size: 0 !important;
+}
+
+/* Restore dropdown font size */
+.goog-te-gadget select {
+    font-size: 14px !important;
+}
+
+
+.VIpgJd-ZVi9od-ORHb-OEVmcd{
+    visibility: hidden;
+}
+
+
+
+
+
+.translate-widget {
+
+    margin-left: 25px;
+
+}
+
+.language-switcher{
+    padding: 1em;
+    font-size: 0.5em;
+}
+
+
+/*****************************/
+
+.translate-widget {
+
+    display: flex;
+
+    align-items: center;
+
+    margin-left: 20px;
+}
+
+.goog-te-combo {
+
+    height: 38px;
+
+    padding: 0 5px;
+
+    margin-top: 10px;
+
+    border: 1px solid #d6d6d6;
+
+    border-radius: 20px;
+
+    background: #fff;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+
+#google_translate_element{
+    margin-top:6em;
+}
+
+
+.skiptranslate iframe{
+    visibility: hidden;
+}
+
+
+
+body {
+    top: 0 !important;
+}
+
+.skiptranslate {
+    top: 0 !important;
+}
+
+.goog-te-gadget .goog-te-combo{
+    border-color: green;
+  color: green;
+}
+/****************** Google Translate css ends here ***********/

@@ -37,7 +37,7 @@ $result = $conn->query(
 
             <div class="header-right">
 
-                <span class="welcome-user">
+                <span class="welcome-user" style="font-size: 0.8em;">
 
                     Welcome,
 
@@ -52,6 +52,7 @@ $result = $conn->query(
                 <a
                     href="logout.php"
                     class="btn btn-danger"
+                    style="font-size: 0.8em;padding:0.5em;"
                 >
                     Logout
                 </a>

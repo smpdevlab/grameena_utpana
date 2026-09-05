@@ -170,7 +170,7 @@ require_once 'includes/header.php';
             >
         </div>
 
-        <h2>Admin Login</h2>
+        <div style="font-size:1.2em;font-weight: 100;margin-bottom:0.5em;">Login</div>
 
         <!-- form -->
 
