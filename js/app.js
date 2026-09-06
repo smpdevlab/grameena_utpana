@@ -1067,12 +1067,12 @@ observer.observe(
 );
 
 
- /***************Hide the Google translate Pop up on top ends here*************** */
+ /***************Hide the Google translate Pop up on top ends here***************
 
 
  
 
-alert("hya 5"); 
+
 
 const observerGtranslate = new MutationObserver(() => {
 
@@ -1116,3 +1116,31 @@ const observer = new MutationObserver(() => {
 
 });
 */
+
+
+/***********************ENGLISH ORIGINAL LINK **************** 
+
+const resetLanguage =
+    document.getElementById(
+        'resetLanguage'
+    );
+
+if (resetLanguage) {
+
+    resetLanguage.addEventListener(
+        'click',
+        function (e) {
+
+            e.preventDefault();
+
+            document.cookie =
+                'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/';
+
+            location.reload();
+
+        }
+    );
+
+}
+
+/***********************ENGLISH ORIGINAL LINK **************** */
