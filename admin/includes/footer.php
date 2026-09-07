@@ -20,6 +20,8 @@ $(document).ready(function () {
 
         order: [[0, 'desc']],
 
+        stripeClasses: ['odd-row', 'even-row'],
+
         dom: 'Bfrtip',
 
         buttons: [

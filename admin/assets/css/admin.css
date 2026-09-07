@@ -297,3 +297,34 @@ MOBILE DASHBOARD
     overflow-x: auto;
 }
 
+
+
+
+thead{
+    background: #e1e6eb;
+    color: black;
+    font-weight: 100;
+
+}
+
+th{
+    
+  color:#3c444d;
+  font-weight: 100;
+  font-size: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+/*********************/
+
+table.dataTable tbody tr:nth-child(odd) {
+    background-color: #f2f4f5;
+}
+
+table.dataTable tbody tr:hover {
+    background-color: #ecf8ff !important;
+    transition: background-color 0.15s ease;
+}

@@ -974,7 +974,7 @@ function googleTranslateElementInit() {
     new google.translate.TranslateElement(
         {
             pageLanguage: 'en',
-            includedLanguages: 'hi,kn,mr'
+            includedLanguages: 'en,hi,kn,mr'
         },
         'google_translate_element'
     );
