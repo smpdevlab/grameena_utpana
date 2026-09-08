@@ -1,0 +1,3 @@
+RewriteEngine On
+
+RewriteRule ^$ /en/index.html [L,R=302]

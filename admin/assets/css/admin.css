@@ -212,6 +212,8 @@ DASHBOARD
 #entriesTable {
 
     width: 100% !important;
+    font-family: calibri;
+  font-weight: 100;
 }
 
 .btn {
@@ -261,7 +263,9 @@ DASHBOARD
 
     text-decoration:none;
 
-    font-weight:600;
+    font-weight:400;
+
+    letter-spacing: 0.4px;
 }
 
 .phone-link:hover{
@@ -295,6 +299,7 @@ MOBILE DASHBOARD
 
 .table-wrapper {
     overflow-x: auto;
+    padding-bottom: 20px;
 }
 
 

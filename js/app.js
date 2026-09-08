@@ -1144,3 +1144,27 @@ if (resetLanguage) {
 }
 
 /***********************ENGLISH ORIGINAL LINK **************** */
+
+
+
+document.getElementById('languageSwitcher').addEventListener('change', function () {
+
+    const selectedLang = this.value;
+
+    // current page filename
+    const currentPage = window.location.pathname.split('/').pop();
+
+    // redirect to same page in selected language folder
+    window.location.href = '/' + selectedLang + '/' + currentPage;
+
+});
+
+
+
+
+const pathParts = window.location.pathname.split('/');
+const currentLang = pathParts[1];
+console.log(currentLang);
+
+document.getElementById('languageSwitcher').value = currentLang;
+
