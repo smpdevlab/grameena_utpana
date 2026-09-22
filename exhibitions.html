@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibitions | Grameena Utpanna Kendra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/exhibitions.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <a href="index.html" class="logo"><img src="images/misc/logomin.png" alt="Grameena Utpanna Kendra"></a>
+        <nav class="nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products &amp; Services</a></li>
+                <li><a href="opportunities.html">Opportunities</a></li>
+                <li><a class="active" href="exhibitions.html">Exhibitions</a></li>
+                <li><a href="earning_platforms.html">Earning Platforms</a></li>
+                <li><a href="get_involved.html">Get involved</a></li>
+            </ul>
+        </nav>
+        <a href="#request-form" class="header-join-btn">Request a Stall</a>
+        <button class="mobile-toggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+</header>
+
+<div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products &amp; Services</a>
+    <a href="opportunities.html">Opportunities</a>
+    <a href="exhibitions.html">Exhibitions</a>
+    <a href="earning_platforms.html">Earning Platforms</a>
+    <a href="get_involved.html">Get involved</a>
+</div>
+
+<main>
+    <section class="exhibition-hero">
+        <div class="container exhibition-hero-content">
+            <span class="exhibition-eyebrow">EXHIBITIONS &amp; EVENTS</span>
+            <h1>Bring Local Products<br>Closer to Customers.</h1>
+            <p>Are you a rural producer, professional, service provider or organisation? Tell us what you would like to showcase at an upcoming exhibition.</p>
+            <a class="btn-primary" href="#request-form">Submit an Exhibition Request <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <section class="exhibition-intro">
+        <div class="container">
+            <div class="exhibition-intro-grid">
+                <div>
+                    <span class="exhibition-eyebrow">A PLATFORM FOR LOCAL ENTERPRISE</span>
+                    <h2>Showcase your work. Meet your market.</h2>
+                </div>
+                <p>We connect rural producers, artisans, professionals and community enterprises with opportunities to display their products and services at exhibitions, fairs and local events.</p>
+            </div>
+            <div class="exhibition-benefits">
+                <article><i class="fa-solid fa-store"></i><h3>Display Products</h3><p>Present your locally made products to visitors and potential customers.</p></article>
+                <article><i class="fa-solid fa-handshake"></i><h3>Build Connections</h3><p>Meet buyers, partners and other producers from the community.</p></article>
+                <article><i class="fa-solid fa-bullhorn"></i><h3>Promote Services</h3><p>Introduce your skills and services to organisations and event organisers.</p></article>
+            </div>
+        </div>
+    </section>
+
+    <section class="exhibition-request" id="request-form">
+        <div class="container exhibition-request-grid">
+            <div class="exhibition-request-copy">
+                <span class="exhibition-eyebrow">REQUEST PARTICIPATION</span>
+                <h2>Let us know how you would like to participate.</h2>
+                <p>Submit your details and requirements. Our team will review your request and contact you when a suitable exhibition or event is available.</p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Product and food stalls</li>
+                    <li><i class="fa-solid fa-check"></i> Service and skills demonstrations</li>
+                    <li><i class="fa-solid fa-check"></i> Community and institutional events</li>
+                </ul>
+            </div>
+            <form class="exhibition-form" action="forms/save-enquiry_generic.php" method="POST">
+                <input type="hidden" name="interest" value="exhibition">
+                <input type="hidden" name="subject" value="Exhibition participation request">
+                <label for="exhibition-name">Full name <span>*</span></label>
+                <input id="exhibition-name" name="full_name" type="text" autocomplete="name" required>
+                <div class="exhibition-form-row">
+                    <div><label for="exhibition-phone">Mobile number <span>*</span></label><input id="exhibition-phone" name="phone" type="tel" inputmode="numeric" pattern="[6-9][0-9]{9}" placeholder="10-digit mobile number" required></div>
+                    <div><label for="exhibition-email">Email address</label><input id="exhibition-email" name="email" type="email" autocomplete="email"></div>
+                </div>
+                <label for="exhibition-role">I am a...</label>
+                <select id="exhibition-role" name="message">
+                    <option value="Rural producer">Rural producer</option>
+                    <option value="Professional or service provider">Professional or service provider</option>
+                    <option value="Organisation or institution">Organisation or institution</option>
+                    <option value="Community group">Community group</option>
+                </select>
+                <label for="exhibition-details">Products or services and requirements <span>*</span></label>
+                <textarea id="exhibition-details" name="message" rows="5" placeholder="Tell us what you would like to display and any stall or event requirements." required></textarea>
+                <button class="btn-primary" type="submit">Send Request <i class="fa-solid fa-paper-plane"></i></button>
+                <p class="exhibition-form-note"><i class="fa-solid fa-circle-info"></i> Participation is subject to event availability and applicable requirements.</p>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-brand"><h3><a href="index.html" class="logo"><img src="images/misc/logomin.png" alt="Grameena Utpanna Kendra"></a></h3><p>Connecting local producers, service providers and communities with opportunities to grow, earn and thrive.</p></div>
+        <div class="footer-links"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="products.html">Products &amp; Services</a></li><li><a href="exhibitions.html">Exhibitions</a></li><li><a href="get_involved.html">Get involved</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 Grameena Utpanna Kendra. All rights reserved.</p><span><b>Naturally Cultivated. Responsibly Delivered.</b></span></div>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
